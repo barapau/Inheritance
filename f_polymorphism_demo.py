@@ -14,9 +14,12 @@ def main():
     print('Here are some animals and')
     print('the sounds they make.')
     print('--------------------------')
-    mammal.show_species()
-    mammal.make_sound()
+    show_mammal_info(mammal)
+    show_mammal_info(dog)
+    show_mammal_info(cat)
+    show_mammal_info('zebra')
 
+''''
     print()
 
     dog.show_species()
@@ -26,6 +29,14 @@ def main():
 
     cat.show_species()
     cat.make_sound()
+'''
+
+def show_mammal_info(creature):
+    if isinstance(creature, animals.Mammal):
+        creature.show_species()
+        creature.make_sound()
+    else:
+        print(f"(creature) is not from animal class")
 
 # Call the main function.
 main()

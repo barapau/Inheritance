@@ -17,7 +17,7 @@ class Mammal:
     # The make_sound method is the mammal's
     # way of making a generic sound.
     
-    def make_sound(self):
+    def make_sound(self): #GENERIC METHOD
         print('Grrrrr')
 
 # The Dog class is a subclass of the Mammal class.
