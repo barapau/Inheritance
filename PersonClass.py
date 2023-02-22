@@ -1,15 +1,21 @@
 
 class Person:
-    def __init__(self, name, address, phone):
+    def __init__(self,name,address,phone):
         self.__name = name
         self.__address = address
-        self.phone = phone
+        self.__phone = phone
     
-    def print_person(self):
-        print('Name', self.__name, 'Address:', self.__address, 'Phone:', self.__phone)
+    def print_person1(self):
+        print('Name', self.__name)
+        print('Address:', self.__address)
+        print('Phone:', self.__phone)
+    
+    
+
 
 class Customer(Person):
-    def __init__(self, name, address, phone, cust_number, mailing):
+    def __init__(self,name,address,phone,cust_number,mailing):
+
         Person.__init__(self, name, address, phone)
     
         self.__cust_number = cust_number
